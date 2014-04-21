@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/04/09 15:11:56.000.866,=C:\Users\Marcus\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/04/09 15:12:28.000.469,C:\HANSYS\Manutenção\UfmPrin.pas=C:\Users\Marcus\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/04/09 15:12:28.000.469,C:\HANSYS\Manutenção\UfmPrin.dfm=C:\Users\Marcus\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2014/04/09 15:12:50.000.664,C:\HANSYS\Manutenção\BackupHansys.dproj=C:\Users\Marcus\Documents\RAD Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>2014/04/15 10:44:44.000.571,=C:\HANSYS\Manutenção\Unit1.pas</Transaction>
+    <Transaction>2014/04/15 10:46:56.000.617,C:\HANSYS\Manutenção\Unit1.pas=C:\HANSYS\Manutenção\UfrmBackupAutomatico.pas</Transaction>
+    <Transaction>2014/04/15 10:46:56.000.617,C:\HANSYS\Manutenção\Unit1.dfm=C:\HANSYS\Manutenção\UfrmBackupAutomatico.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/07/25 08:56:15.000.966,=C:\HANSYS\WEBSERVICE\FormUnit1.pas</Transaction>
+    <Transaction>2013/07/25 08:56:16.000.043,=C:\HANSYS\WEBSERVICE\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2013/07/25 08:56:20.000.492,=C:\HANSYS\WEBSERVICE\WebModuleUnit1.pas</Transaction>
+    <Transaction>2013/07/25 08:56:24.000.983,=C:\HANSYS\WEBSERVICE\js\CallbackFramework-min.js</Transaction>
+    <Transaction>2013/07/25 08:56:24.000.792,=C:\HANSYS\WEBSERVICE\js\json2.js</Transaction>
+    <Transaction>2013/07/25 08:56:24.000.962,=C:\HANSYS\WEBSERVICE\js\ServerFunctionExecutor-min.js</Transaction>
+    <Transaction>2013/07/25 08:56:24.000.724,=C:\HANSYS\WEBSERVICE\js\ServerFunctionExecutor.js</Transaction>
+    <Transaction>2013/07/25 08:56:24.000.686,=C:\HANSYS\WEBSERVICE\js\base64.js</Transaction>
+    <Transaction>2013/07/25 08:56:24.000.926,=C:\HANSYS\WEBSERVICE\js\json2-min.js</Transaction>
+    <Transaction>2013/07/25 08:56:24.000.909,=C:\HANSYS\WEBSERVICE\js\base64-min.js</Transaction>
+    <Transaction>2013/07/25 08:56:24.000.840,=C:\HANSYS\WEBSERVICE\js\CallbackFramework.js</Transaction>
+    <Transaction>2013/07/25 08:56:24.000.882,=C:\HANSYS\WEBSERVICE\js\ServerFunctions.js</Transaction>
+    <Transaction>2013/07/25 08:56:25.000.156,=C:\HANSYS\WEBSERVICE\images\collapse.png</Transaction>
+    <Transaction>2013/07/25 08:56:25.000.065,=C:\HANSYS\WEBSERVICE\css\main.css</Transaction>
+    <Transaction>2013/07/25 08:56:25.000.033,=C:\HANSYS\WEBSERVICE\js\ServerFunctionInvoker.js</Transaction>
+    <Transaction>2013/07/25 08:56:25.000.160,=C:\HANSYS\WEBSERVICE\images\expand.png</Transaction>
+    <Transaction>2013/07/25 08:56:25.000.103,=C:\HANSYS\WEBSERVICE\templates\ReverseString.html</Transaction>
+    <Transaction>2013/07/25 08:56:25.000.008,=C:\HANSYS\WEBSERVICE\js\connection.js</Transaction>
+    <Transaction>2013/07/25 08:56:25.000.128,=C:\HANSYS\WEBSERVICE\templates\ServerFunctionInvoker.html</Transaction>
+    <Transaction>2013/07/25 08:56:25.000.087,=C:\HANSYS\WEBSERVICE\css\ServerFunctionInvoker.css</Transaction>
+    <Transaction>2013/07/25 09:18:07.000.534,C:\HANSYS\WEBSERVICE\FONTES\FrmPrin.dfm=C:\HANSYS\WEBSERVICE\FormUnit1.dfm</Transaction>
+    <Transaction>2013/07/25 09:18:07.000.534,C:\HANSYS\WEBSERVICE\FONTES\FrmPrin.pas=C:\HANSYS\WEBSERVICE\FormUnit1.pas</Transaction>
+    <Transaction>2013/07/25 09:18:15.000.434,C:\HANSYS\WEBSERVICE\WebModulePrincipal.pas=C:\HANSYS\WEBSERVICE\WebModuleUnit1.pas</Transaction>
+    <Transaction>2013/07/25 09:18:15.000.434,C:\HANSYS\WEBSERVICE\WebModulePrincipal.dfm=C:\HANSYS\WEBSERVICE\WebModuleUnit1.dfm</Transaction>
+    <Transaction>2013/07/25 09:18:22.000.808,C:\HANSYS\WEBSERVICE\ServerMethodsPrin.dfm=C:\HANSYS\WEBSERVICE\ServerMethodsUnit1.dfm</Transaction>
+    <Transaction>2013/07/25 09:18:22.000.808,C:\HANSYS\WEBSERVICE\ServerMethodsPrin.pas=C:\HANSYS\WEBSERVICE\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2013/10/21 14:08:28.000.683,=C:\HANSYS\WEBSERVICE\Unit1.pas</Transaction>
+    <Transaction>2013/10/21 14:09:20.000.882,C:\HANSYS\WEBSERVICE\UTratamento.pas=C:\HANSYS\WEBSERVICE\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

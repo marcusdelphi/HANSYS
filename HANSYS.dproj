@@ -1,0 +1,485 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{552A4913-BE6D-476A-B54B-8195F09E48ED}</ProjectGuid>
+			<ProjectVersion>13.4</ProjectVersion>
+			<FrameworkType>VCL</FrameworkType>
+			<MainSource>HANSYS.dpr</MainSource>
+			<Base>True</Base>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<Platform Condition="'$(Platform)'==''">Win32</Platform>
+			<TargetedPlatforms>1</TargetedPlatforms>
+			<AppType>Application</AppType>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+			<Base_Win64>true</Base_Win64>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+			<Base_Win32>true</Base_Win32>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+			<Cfg_1_Win32>true</Cfg_1_Win32>
+			<CfgParent>Cfg_1</CfgParent>
+			<Cfg_1>true</Cfg_1>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_UsePackage>bindcompfmx;fmx;rtl;dbrtl;IndySystem;DbxClientDriver;bindcomp;inetdb;DBXInterBaseDriver;DataSnapCommon;DataSnapClient;DataSnapServer;DataSnapProviderClient;xmlrtl;DbxCommonDriver;IndyProtocols;DBXMySQLDriver;dbxcds;bindengine;soaprtl;DBXOracleDriver;dsnap;DBXInformixDriver;IndyCore;fmxase;DBXFirebirdDriver;inet;fmxobj;inetdbxpress;DBXSybaseASADriver;fmxdae;dbexpress;DataSnapIndy10ServerTransport;IPIndyImpl;$(DCC_UsePackage)</DCC_UsePackage>
+			<Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
+			<DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
+			<DCC_DcuOutput>.\$(Platform)\$(Config)</DCC_DcuOutput>
+			<DCC_ExeOutput>.\$(Platform)\$(Config)</DCC_ExeOutput>
+			<DCC_E>false</DCC_E>
+			<DCC_N>false</DCC_N>
+			<DCC_S>false</DCC_S>
+			<DCC_F>false</DCC_F>
+			<DCC_K>false</DCC_K>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base_Win64)'!=''">
+			<DCC_UsePackage>DBXOdbcDriver;DBXSybaseASEDriver;vclimg;vclactnband;vcldb;vcldsnap;bindcompvcl;vclie;vcltouch;DBXDb2Driver;websnap;VclSmp;vcl;DBXMSSQLDriver;dsnapcon;vclx;webdsnap;$(DCC_UsePackage)</DCC_UsePackage>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base_Win32)'!=''">
+			<DCC_UsePackage>fsADO16;pckUCDBXConn;frxDBX16;vcldbx;frx16;TeeDB;frxTee16;Rave100VCL;vclib;Tee;inetdbbde;DBXOdbcDriver;frxBDE16;svnui;ibxpress;DBXSybaseASEDriver;vclimg;fsBDE16;frxDB16;intrawebdb_120_160;fmi;fs16;TeeUI;vclactnband;FMXTee;vcldb;vcldsnap;bindcompvcl;frxcs16;fsIBX16;vclie;vcltouch;Intraweb_120_160;DBXDb2Driver;websnap;frxADO16;vclribbon;frxe16;VclSmp;fsDB16;vcl;DataSnapConnectors;CloudService;DBXMSSQLDriver;CodeSiteExpressPkg;FmxTeeUI;dsnapcon;dclfrxTee16;fsTee16;vclx;webdsnap;svn;bdertl;frxIBX16;adortl;$(DCC_UsePackage)</DCC_UsePackage>
+			<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+			<DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+			<VerInfo_Locale>1033</VerInfo_Locale>
+			<Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+			<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+			<DCC_Optimize>false</DCC_Optimize>
+			<DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+			<DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+			<DCC_RemoteDebug>true</DCC_RemoteDebug>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+			<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+			<Icon_MainIcon>HANSYS_Icon.ico</Icon_MainIcon>
+			<VerInfo_Locale>1033</VerInfo_Locale>
+			<DCC_RemoteDebug>false</DCC_RemoteDebug>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="$(MainSource)">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="UfrmPrincipal.pas">
+				<Form>frmPrincipal</Form>
+			</DCCReference>
+			<DCCReference Include="UfrmFichadeCadastro.pas">
+				<Form>frmFichadeCadastro</Form>
+			</DCCReference>
+			<DCCReference Include="UfrmLogin.pas">
+				<Form>frmLogin</Form>
+			</DCCReference>
+			<DCCReference Include="UdmPrincipal.pas">
+				<Form>dmPrincipal</Form>
+				<FormType>dfm</FormType>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="UdmFicha.pas">
+				<Form>dmFicha</Form>
+				<FormType>dfm</FormType>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="UfrmFotosdiagnostico.pas">
+				<Form>frmFotosdiagnostico</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UFuncoes.pas"/>
+			<DCCReference Include="UfrmMenudeRelatorios.pas">
+				<Form>frmMenudeRelatorios</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCalendario.pas">
+				<Form>frmCalendario</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmResidAnteriores.pas">
+				<Form>frmResidAnteriores</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="USobre.pas">
+				<Form>frmSobre</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmFotosRecidiva.pas">
+				<Form>frmFotosRecidiva</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmInstrucoes.pas">
+				<Form>frmInstrucoes</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmFotoComunicante.pas">
+				<Form>frmFotoComunicante</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresMD1.pas">
+				<Form>frmCoresMD1</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresMD2.pas">
+				<Form>frmCoresMD2</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresMD3.pas">
+				<Form>frmCoresMD3</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresMD4.pas">
+				<Form>frmCoresMD4</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresMD5.pas">
+				<Form>frmCoresMD5</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresMD6.pas">
+				<Form>frmCoresMD6</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresMD7.pas">
+				<Form>frmCoresMD7</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresME1.pas">
+				<Form>frmCoresME1</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresME2.pas">
+				<Form>frmCoresME2</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresME3.pas">
+				<Form>frmCoresME3</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresME4.pas">
+				<Form>frmCoresME4</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresME5.pas">
+				<Form>frmCoresME5</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresME6.pas">
+				<Form>frmCoresME6</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresME7.pas">
+				<Form>frmCoresME7</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresPD1.pas">
+				<Form>frmCoresPD1</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresPD2.pas">
+				<Form>frmCoresPD2</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresPD3.pas">
+				<Form>frmCoresPD3</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresPD4.pas">
+				<Form>frmCoresPD4</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresPD5.pas">
+				<Form>frmCoresPD5</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresPD6.pas">
+				<Form>frmCoresPD6</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresPD7.pas">
+				<Form>frmCoresPD7</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresPD8.pas">
+				<Form>frmCoresPD8</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresPD9.pas">
+				<Form>frmCoresPD9</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresPD10.pas">
+				<Form>frmCoresPD10</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresPE1.pas">
+				<Form>frmCoresPE1</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresPE2.pas">
+				<Form>frmCoresPE2</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresPE3.pas">
+				<Form>frmCoresPE3</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresPE4.pas">
+				<Form>frmCoresPE4</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresPE5.pas">
+				<Form>frmCoresPE5</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresPE6.pas">
+				<Form>frmCoresPE6</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresPE7.pas">
+				<Form>frmCoresPE7</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresPE9.pas">
+				<Form>frmCoresPE9</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresPE8.pas">
+				<Form>frmCoresPE8</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCoresPE10.pas">
+				<Form>frmCoresPE10</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmConfig.pas">
+				<Form>FrmConfig</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmPesqDadosPaciente.pas">
+				<Form>frmPesqDadosPaciente</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UdmFichaEstudante.pas">
+				<Form>dmFichaEstudante</Form>
+				<FormType>dfm</FormType>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="UfrmFichaEstudantes.pas">
+				<Form>frmFichaEstudantes</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmPesqEstudantes.pas">
+				<Form>frmPesqEstudantes</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UfrmCadUsuario.pas">
+				<Form>frmCadUsuario</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UdmSINAN.pas">
+				<Form>dmSINAN</Form>
+				<FormType>dfm</FormType>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="UfrmPesquisaSINAN.pas">
+				<Form>frmPesquisaSINAN</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UdmEstudantecomu.pas">
+				<Form>dmEstudantecomu</Form>
+				<FormType>dfm</FormType>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="UfrmComunicantesEstu.pas">
+				<Form>frmComunicantesEstu</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="UdmRelatEstudantes.pas">
+				<Form>dmRelatEstudantes</Form>
+				<FormType>dfm</FormType>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="UfrmRelatListEstuCidade.pas">
+				<Form>frmRelatListEstuCidade</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Delphi.Personality>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1046</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<Source>
+						<Source Name="MainSource">HANSYS.dpr</Source>
+					</Source>
+					<Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\bcboffice2k160.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\bcbofficexp160.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dcloffice2k160.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dclofficexp160.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+					</Excluded_Packages>
+				</Delphi.Personality>
+				<Deployment>
+					<DeployFile Class="DebugSymbols" Configuration="Debug" LocalName="Win32\Debug\HANSYS.rsm">
+						<Platform Name="Win32">
+							<RemoteName>HANSYS.rsm</RemoteName>
+						</Platform>
+					</DeployFile>
+					<DeployFile Class="ProjectOutput" Configuration="Debug" LocalName="Win32\Debug\HANSYS.exe">
+						<Platform Name="Win32"/>
+					</DeployFile>
+					<DeployClass Name="ProjectOutput" Required="true">
+						<Platform Name="OSX32">
+							<RemoteDir>Contents\MacOS</RemoteDir>
+							<Operation>1</Operation>
+						</Platform>
+						<Platform Name="Win32">
+							<Operation>0</Operation>
+						</Platform>
+					</DeployClass>
+					<DeployClass Name="DependencyPackage" Required="true">
+						<Platform Name="OSX32">
+							<RemoteDir>Contents\MacOS</RemoteDir>
+							<Operation>1</Operation>
+							<Extensions>.dylib</Extensions>
+						</Platform>
+						<Platform Name="Win32">
+							<Operation>0</Operation>
+							<Extensions>.bpl</Extensions>
+						</Platform>
+					</DeployClass>
+					<DeployClass Name="DependencyModule">
+						<Platform Name="OSX32">
+							<RemoteDir>Contents\MacOS</RemoteDir>
+							<Operation>1</Operation>
+							<Extensions>.dylib</Extensions>
+						</Platform>
+						<Platform Name="Win32">
+							<Operation>0</Operation>
+							<Extensions>.dll;.bpl</Extensions>
+						</Platform>
+					</DeployClass>
+					<DeployClass Name="ProjectOSXInfoPList">
+						<Platform Name="OSX32">
+							<RemoteDir>Contents</RemoteDir>
+							<Operation>1</Operation>
+						</Platform>
+					</DeployClass>
+					<DeployClass Name="File">
+						<Platform Name="OSX32">
+							<RemoteDir>Contents\MacOS</RemoteDir>
+							<Operation>0</Operation>
+						</Platform>
+						<Platform Name="Win32">
+							<Operation>0</Operation>
+						</Platform>
+					</DeployClass>
+					<DeployClass Name="DebugSymbols">
+						<Platform Name="OSX32">
+							<RemoteDir>Contents\MacOS</RemoteDir>
+							<Operation>1</Operation>
+						</Platform>
+						<Platform Name="Win32">
+							<Operation>0</Operation>
+						</Platform>
+					</DeployClass>
+					<DeployClass Name="DependencyFramework">
+						<Platform Name="OSX32">
+							<RemoteDir>Contents\MacOS</RemoteDir>
+							<Operation>1</Operation>
+							<Extensions>.framework</Extensions>
+						</Platform>
+						<Platform Name="Win32">
+							<Operation>0</Operation>
+						</Platform>
+					</DeployClass>
+					<DeployClass Name="AdditionalDebugSymbols">
+						<Platform Name="OSX32">
+							<RemoteDir>Contents\MacOS</RemoteDir>
+							<Operation>1</Operation>
+						</Platform>
+						<Platform Name="Win32">
+							<Operation>0</Operation>
+						</Platform>
+					</DeployClass>
+					<DeployClass Name="ProjectOSXResource">
+						<Platform Name="OSX32">
+							<RemoteDir>Contents\Resources</RemoteDir>
+							<Operation>1</Operation>
+						</Platform>
+					</DeployClass>
+					<ProjectRoot Name="$(PROJECTNAME).app" Platform="OSX32"/>
+					<ProjectRoot Name="$(PROJECTNAME)" Platform="Win64"/>
+					<ProjectRoot Name="$(PROJECTNAME)" Platform="Win32"/>
+				</Deployment>
+				<Platforms>
+					<Platform value="Win64">False</Platform>
+					<Platform value="Win32">True</Platform>
+				</Platforms>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+		<Import Condition="Exists('$(MSBuildProjectName).deployproj')" Project="$(MSBuildProjectName).deployproj"/>
+	</Project>
